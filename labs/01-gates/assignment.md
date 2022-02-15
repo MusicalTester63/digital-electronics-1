@@ -1,5 +1,5 @@
 # Lab 1: David Hamran
-##Zmena test123
+## Zmena test123
 
 ### De Morgan's laws
 
