@@ -5,7 +5,8 @@
 
 1. Equations of all three versions of logic function f(c,b,a):
 
-   ![Logic function](images/equations.png)
+   ![git](images/screen.jpg)
+   ![git](images/screeen2.jpg)
 
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
@@ -37,7 +38,7 @@ end architecture dataflow;
 
    ![git](images/distributive_law.jpg)
 
-
+   
 2. Link to your public EDA Playground example:
 
    https://www.edaplayground.com/x/GWxV
