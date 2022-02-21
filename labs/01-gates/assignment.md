@@ -1,5 +1,5 @@
 # Lab 1: David Hamran
-## Zmena test123
+## Zmena test123456789
 
 ### De Morgan's laws
 
@@ -38,7 +38,7 @@ end architecture dataflow;
 
    ![git](images/distributive_law.jpg)
 
-   
+
 2. Link to your public EDA Playground example:
 
    https://www.edaplayground.com/x/GWxV
