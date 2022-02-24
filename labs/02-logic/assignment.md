@@ -44,35 +44,51 @@
 
 1. Listing of VHDL stimulus process from testbench file (`testbench.vhd`) with at least one assert (use BCD codes of your student ID digits as input combinations). Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-   Last two digits of my student ID: **xxxx??**
+   Last two digits of my student ID: 53
 
 ```vhdl
-    p_stimulus : process
-    begin
-        -- Report a note at the beginning of stimulus process
-        report "Stimulus process started" severity note;
+          p_stimulus : process
+          begin    
 
-        -- First test case
-        s_b <= "BCD_OF_YOUR_SECOND_LAST_ID_DIGIT"; -- Such as "0101" if ID = xxxx56
-        s_a <= "BCD_OF_YOUR_LAST_ID_DIGIT";        -- Such as "0110" if ID = xxxx56
-        wait for 100 ns;
-        -- Expected output
-        assert ((s_B_greater_A = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_equals_A  = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_less_A    = 'WRITE_CORRECT_VALUE_HERE'))
-        -- If false, then report an error
-        report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
+              report "Stimulus process started" severity note;
 
-        -- Report a note at the end of stimulus process
-        report "Stimulus process finished" severity note;
-        wait;
-    end process p_stimulus;
+              --Will report error but comparator works
+          signal_A <= "0101";
+              signal_B <= "0011";
+              wait for 100 ns;
+
+              assert ((signal_A_greater_B = '0') and
+                      (signal_A_equal_B  = '1') and
+                      (signal_A_less_B    = '0'))
+
+              report "Input combination 0101, 0011 FAILED" severity error;
+
+              --Will not report error
+          signal_A <= "0101";
+              signal_B <= "0101";
+              wait for 100 ns;
+
+              assert ((signal_A_greater_B = '0') and
+                      (signal_A_equal_B  = '1') and
+                      (signal_A_less_B    = '0'))
+
+              report "Input combination 0101, 0101 FAILED" severity error;
+
+
+
+              report "Stimulus process finished" severity note;
+
+              
+              wait;
+
+          end process p_stimulus;
 ```
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![your figure]()
+   ![Log](images/log.jpg)
+   ![Signals](images/signals.jpg)
 
 3. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   [4-bit comparator](https://www.edaplayground.com/x/h9Yk)
