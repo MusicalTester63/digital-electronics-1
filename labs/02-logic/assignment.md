@@ -87,7 +87,7 @@
 2. Text console screenshot during your simulation, including reports.
 
    ![Log](images/log.jpg)
-   ![Signals](images/signals.jpg)
+   ![Signals](images/signals0.jpg)
     ![Signals](images/signals1.jpg)
 
 3. Link to your public EDA Playground example:
