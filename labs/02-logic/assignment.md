@@ -78,7 +78,7 @@
 
               report "Stimulus process finished" severity note;
 
-              
+
               wait;
 
           end process p_stimulus;
@@ -88,6 +88,7 @@
 
    ![Log](images/log.jpg)
    ![Signals](images/signals.jpg)
+    ![Signals](images/signals1.jpg)
 
 3. Link to your public EDA Playground example:
 
