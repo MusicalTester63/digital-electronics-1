@@ -128,8 +128,8 @@
 
 1. Listing of LEDs(7:4) part of VHDL architecture from source file `top.vhd`. Try to write logic functions as simple as possible. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-   ```vhdl
-   -- Display input value on LEDs
+```vhdl
+-- Display input value on LEDs
  -- Experiments on your own: LED(7:4) indicators
 
  -- Turn LED(4) on if input value is equal to 0 (0 because we turn on LED by 0)
@@ -143,4 +143,4 @@
 
  -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
     LED(7) <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000");
-   ```
+```
