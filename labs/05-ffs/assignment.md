@@ -8,6 +8,8 @@
    ![Characteristic equations](images/eq.png)
 
    <!--
+
+	LaTeX editor
    https://editor.codecogs.com/
    -->
 
