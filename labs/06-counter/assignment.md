@@ -53,13 +53,13 @@ The Nexys A7 board provides five push buttons for user applications.
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-	###Figure 1: Zoomed out screenshot
+###Figure 1: Zoomed out screenshot
    ![Waveforms](images/waveforms.png)
-   ###Figure 2: Testing reset
+###Figure 2: Testing reset
    ![reset](images/reset.png)
-   ###Figure 3: Testing enable and reverse to counting down
+###Figure 3: Testing enable and reverse to counting down
    ![enable-and-downcount](images/enable_and_countdown.png)
-   ###Figure 4: Testing stop(same signal as in figure 2(s_en))
+###Figure 4: Testing stop(same signal as in figure 2(s_en))
    ![stoping-counter](images/stop.png)
 
 ### Two counters
