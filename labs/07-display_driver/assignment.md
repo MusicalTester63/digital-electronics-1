@@ -91,10 +91,10 @@ Due to the physiological properties of human vision, it is necessary that the ti
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![waveforms](images/dd_waveforms.png)
 
 ### Eight-digit driver
 
 1. Image of the 8-digit driver's block schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components, and internal signals!
 
-   ![your figure]()
+   ![8digit_driver](images/8digit_driver)
