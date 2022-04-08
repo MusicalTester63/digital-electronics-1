@@ -14,7 +14,7 @@
 ### Pmod ports
 ![Pmod ports](images/PMOD.png)
 
-###RGB LEDs
+### RGB LEDs
 ![LEDs](images/LED.png)
 
 ### Traffic light controller
