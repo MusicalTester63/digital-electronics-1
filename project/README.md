@@ -58,24 +58,32 @@ In addition @ symbol is represented as **.--.-.**
 
 ### 7-seg alphabet implementation
 
-To display whole alphabet on 7-seg display we use 
+To display whole alphabet on 7-seg display we use 7-segment alphabet 'Seikoo' by Alexander Fakoó
 
 <img src="img/7seg_alphabet.png" alt="morse" style="width:450px;"/>
 
-Link to authors site:
+Link: 
 [7-segment alphabet 'Seikoo' by Alexander Fakoó in 2012](https://fakoo.de/)
 
 <a name="hardware"></a>
 
 ## Hardware description
 
-Write your text here.
 
 <a name="modules"></a>
 
 ## VHDL modules description and simulations
 
-Write your text here.
+### Morse display driver
+This component is inspired by:[display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
+First 6 7-segment displays are used to display morse code. Last display is used to display normal character or number.
+
+### Block scheme of the driver
+<img src="img/morse_driver.png" alt="morse_driver" style="width:450px;"/>
+
+### Simulation
+This example shows how driver displays character "a" and also demonstrates reset function.
+<img src="img/morse_dirver_sim_char_a.png" alt="morse_driver_sim" style="width:450px;"/>
 
 <a name="top"></a>
 

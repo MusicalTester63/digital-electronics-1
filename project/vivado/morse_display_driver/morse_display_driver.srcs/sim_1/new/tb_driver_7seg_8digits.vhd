@@ -86,13 +86,7 @@ begin
     begin
 	
 	   s_data  <= "000000";--a
-       wait for 400 ns;
-       s_data  <= "000001";--b
-       
-       
-		
-		
-        wait;
+       wait;
         
     end process p_stimulus;
 
