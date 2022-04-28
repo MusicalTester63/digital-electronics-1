@@ -79,11 +79,11 @@ This component is inspired by:[display driver](https://github.com/tomas-fryza/di
 First 6 7-segment displays are used to display morse code. Last display is used to display normal character or number.
 
 ### Block scheme of the driver
-<img src="img/morse_driver.png" alt="morse_driver" style="width:450px;"/>
+<img src="img/morse_driver.png" alt="morse_driver";"/>
 
 ### Simulation
 This example shows how driver displays character "a" and also demonstrates reset function.
-<img src="img/morse_dirver_sim_char_a.png" alt="morse_driver_sim" style="width:450px;"/>
+<img src="img/morse_dirver_sim_char_a.png" alt="morse_driver_sim";"/>
 
 <a name="top"></a>
 
