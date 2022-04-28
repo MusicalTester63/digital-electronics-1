@@ -42,7 +42,7 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
 ### Numbers represented in binary
 
 | **Character** | **Binary** | **Character** | **Binary** |
-   | :-: | :-: | :-: | :-: | :-: | :-: |
+   | :-: | :-: | :-: | :-: |
    | 0 | 011 010 | 5 | 011 111 |
    | 1 | 011 011 | 6 | 100 000 |
    | 2 | 011 100 | 7 | 100 001 |
