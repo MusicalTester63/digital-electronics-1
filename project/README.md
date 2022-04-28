@@ -51,13 +51,18 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
   
 ### Morse alphabet
 
-<img src="img/morse_alphabet.png" alt="morse" style="width:200px;"/>
+<img src="img/morse_alphabet.png" alt="morse" style="width:800px;"/>
   
 In addition @ symbol is represented as **.--.-.**
     
-  
-  
 
+### 7-seg alphabet implementation
+
+To display whole alphabet on 7-seg display we use 
+
+<img src="img/7seg_alphabet.png" alt="morse" style="width:800px;"/>
+  
+[7-segment alphabet 'Seikoo' by Alexander Fakoó in 2012](https://fakoo.de/)
 
 <a name="hardware"></a>
 
