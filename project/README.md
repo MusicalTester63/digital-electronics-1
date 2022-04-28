@@ -51,7 +51,7 @@ Objective of our project is to create a Morse code transmitter. Our approach is 
   
 ### Morse alphabet
 
-![morse](img/morse_alphabet.png)  
+<img src="img/morse_alphabet.png" alt="morse" style="width:200px;"/>
   
 In addition @ symbol is represented as **.--.-.**
     
