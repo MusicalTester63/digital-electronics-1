@@ -75,7 +75,7 @@ Link:
 # VHDL modules description and simulations
 
 ## Morse display driver
-This component is inspired by:[display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
+This component is inspired by: [display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
 First six 7-segment displays are used to display morse code. Last display is used to display normal character or number.
 
 ### Block scheme of the driver
@@ -90,9 +90,12 @@ This example shows how driver displays character "a" and also demonstrates reset
 ## Morse code transmitter
 This component uses RGB LEDs. Left LED is used to transmit morse code by blinking(DOT) and shining(DASH). Left LED either blinks or shines in green color or it is turned off completely. Right LED is used as state indicator. When red light is shining, transmitter is in the state of inputting. When a button is pressed, transmitters state changes to transmitting which is indicated by yellow light. After transmitting it returns to inputting state indicated by red as mentioned before.
 
+### Block scheme of the transmitter
+<img src="images/transmitter.png" alt="morse_transmitter" style="width:600px;"/>
 
-
-
+### Simulation
+This example shows how transmitter translates and transmits character "a" and "b"
+<img src="images/morse_transmitter_sim_char_ab.png" alt="morse_transmitter_sim"/>
 
 
 
