@@ -67,7 +67,7 @@ Link:
 
 <a name="hardware"></a>
 
-## Hardware description
+# Hardware description
 
 
 <a name="modules"></a>
@@ -99,18 +99,18 @@ This component uses RGB LEDs. Left LED is used to transmit morse code by blinkin
 
 <a name="top"></a>
 
-## TOP module description and simulations
+# TOP module description and simulations
 
 Write your text here.
 
 <a name="video"></a>
 
-## Video
+# Video
 
 Write your text here
 
 <a name="references"></a>
 
-## References
+# References
 
 1. Write your text here.
