@@ -83,7 +83,7 @@ begin
 	s_start <= '1';
     wait for 20 ns;
     s_start <= '0';
-	wait for 250 ns;
+	wait for 300 ns;
 
 	s_start <= '1';
     wait for 20 ns;
@@ -102,7 +102,7 @@ begin
     
 		
         s_data <= "000000";--a
-        wait for 330 ns;
+        wait for 360 ns;
 		
 		
         s_data <= "000001";--b

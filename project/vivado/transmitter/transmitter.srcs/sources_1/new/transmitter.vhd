@@ -30,7 +30,7 @@ architecture Behavioral of transmitter is
 
     --Define the states
 	type t_state is (INPUTTING,TRANSMITTING);
-	type led_state is (START,CHAR0,CHAR1,CHAR2,CHAR3,CHAR4,CHAR5);
+	type led_state is (START,CHAR0,CHAR1,CHAR2,CHAR3,CHAR4,CHAR5,PAUSE0,PAUSE1,PAUSE2,PAUSE3,PAUSE4,PAUSE5);
     
 	
 	--Define the signal that uses different states
@@ -50,8 +50,8 @@ architecture Behavioral of transmitter is
 
 
     --Specific values for local counter
-    constant c_DELAY_1SEC : unsigned(4 downto 0) := b"0_0100";	
-	constant c_DELAY_2SEC : unsigned(4 downto 0) := b"0_1000";	
+    constant c_DELAY_1SEC : unsigned(4 downto 0) := b"0_0100";--(START,DOT,PAUSE)	
+	constant c_DELAY_2SEC : unsigned(4 downto 0) := b"0_1000";--(DASH)
     constant c_DELAY_3SEC : unsigned(4 downto 0) := b"0_1000"; 
 	constant c_DELAY_4SEC : unsigned(4 downto 0) := b"1_0000";
     constant c_ZERO       : unsigned(4 downto 0) := b"0_0000";
@@ -61,7 +61,7 @@ architecture Behavioral of transmitter is
 	constant c_OFF		: std_logic_vector(2 downto 0)	:= b"000";		--off(START,PAUSE)
     constant c_RED		: std_logic_vector(2 downto 0)	:= b"100";		--RED(STATE)
     constant c_GREEN	: std_logic_vector(2 downto 0)	:= b"010";		--GREEN shines green(DOT,DASH)
-	constant c_BLUE		: std_logic_vector(2 downto 0)	:= b"001";		--BLUE
+	constant c_BLUE		: std_logic_vector(2 downto 0)	:= b"001";		--BLUE(UNUSED)
 	constant c_YELLOW	: std_logic_vector(2 downto 0)	:= b"110";		--YELLOW(STATE)
 	
 	
@@ -171,7 +171,7 @@ begin
 									else
 										-- Move to the next state if next length bit is '1' else end transmission
 										if(s_data_length(4) = '1') then
-											s_led_state <= CHAR1;
+											s_led_state <= PAUSE0;
 										else
 											-- END OF TRANSMISSION 
 											s_led_state <= START;
@@ -189,7 +189,7 @@ begin
 									else
 										-- Move to the next state if next length bit is '1' else end transmission
 										if(s_data_length(4) = '1') then
-											s_led_state <= CHAR1;
+											s_led_state <= PAUSE0;
 										else
 											-- END OF TRANSMISSION 
 											s_led_state <= START;
@@ -202,6 +202,29 @@ begin
 								end if;
 								
 								
+							
+							when PAUSE0 =>
+		
+								if (s_cnt < c_DELAY_1SEC) then
+									s_cnt <= s_cnt + 1;
+								else
+									-- Move to the next state if next length bit is '1' else end transmission
+									if(s_data_length(4) = '1') then		
+									
+										s_led_state <= CHAR1;
+									
+									else
+										-- END OF TRANSMISSION 
+										s_led_state <= START;
+										s_t_state <= INPUTTING;
+									end if;
+								-- Reset local counter value
+								s_cnt <= c_ZERO;
+								end if;
+								
+								
+								
+								
 						--SECOND CHARACTER
 							when CHAR1 =>
 							
@@ -212,7 +235,7 @@ begin
 									else
 										-- Move to the next state if next length bit is '1' else end transmission
 										if(s_data_length(3) = '1') then
-											s_led_state <= CHAR2;
+											s_led_state <= PAUSE1;
 										else
 											-- END OF TRANSMISSION 
 											s_led_state <= START;
@@ -230,7 +253,7 @@ begin
 									else
 										-- Move to the next state if next length bit is '1' else end transmission
 										if(s_data_length(3) = '1') then
-											s_led_state <= CHAR2;
+											s_led_state <= PAUSE1;
 										else
 											-- END OF TRANSMISSION 
 											s_led_state <= START;
@@ -242,7 +265,24 @@ begin
 									end if;
 								end if;
 							
-							
+							when PAUSE1 =>
+		
+								if (s_cnt < c_DELAY_1SEC) then
+									s_cnt <= s_cnt + 1;
+								else
+									-- Move to the next state if next length bit is '1' else end transmission
+									if(s_data_length(3) = '1') then		
+									
+										s_led_state <= CHAR2;
+									
+									else
+										-- END OF TRANSMISSION 
+										s_led_state <= START;
+										s_t_state <= INPUTTING;
+									end if;
+								-- Reset local counter value
+								s_cnt <= c_ZERO;
+								end if;
 							
 						
 						--THIRD CHARACTER
@@ -256,7 +296,7 @@ begin
 										else
 											-- Move to the next state if next length bit is '1' else end transmission
 											if(s_data_length(2) = '1') then
-												s_led_state <= CHAR3;
+												s_led_state <= PAUSE2;
 											else
 												-- END OF TRANSMISSION 
 												s_led_state <= START;
@@ -275,7 +315,7 @@ begin
 										else
 											-- Move to the next state if next length bit is '1' else end transmission
 											if(s_data_length(2) = '1') then
-												s_led_state <= CHAR3;
+												s_led_state <= PAUSE2;
 											else
 												-- END OF TRANSMISSION 
 												s_led_state <= START;
@@ -296,6 +336,33 @@ begin
 								
 								end if;
 							
+							
+							
+							when PAUSE2 =>
+		
+								if (s_cnt < c_DELAY_1SEC) then
+									s_cnt <= s_cnt + 1;
+								else
+									-- Move to the next state if next length bit is '1' else end transmission
+									if(s_data_length(3) = '1') then		
+									
+										s_led_state <= CHAR3;
+									
+									else
+										-- END OF TRANSMISSION 
+										s_led_state <= START;
+										s_t_state <= INPUTTING;
+									end if;
+								-- Reset local counter value
+								s_cnt <= c_ZERO;
+								end if;
+							
+							
+							
+							
+							
+							
+							
 						
 						--FOURTH CHARACTER
 							when CHAR3 =>
@@ -308,7 +375,7 @@ begin
 										else
 											-- Move to the next state if next length bit is '1' else end transmission
 											if(s_data_length(1) = '1') then
-												s_led_state <= CHAR4;
+												s_led_state <= PAUSE3;
 											else
 												-- END OF TRANSMISSION 
 												s_led_state <= START;
@@ -327,7 +394,7 @@ begin
 										else
 											-- Move to the next state if next length bit is '1' else end transmission
 											if(s_data_length(1) = '1') then
-												s_led_state <= CHAR4;
+												s_led_state <= PAUSE3;
 											else
 												-- END OF TRANSMISSION 
 												s_led_state <= START;
@@ -349,6 +416,31 @@ begin
 								end if;
 							
 							
+							when PAUSE3 =>
+		
+								if (s_cnt < c_DELAY_1SEC) then
+									s_cnt <= s_cnt + 1;
+								else
+									-- Move to the next state if next length bit is '1' else end transmission
+									if(s_data_length(3) = '1') then		
+									
+										s_led_state <= CHAR4;
+									
+									else
+										-- END OF TRANSMISSION 
+										s_led_state <= START;
+										s_t_state <= INPUTTING;
+									end if;
+								-- Reset local counter value
+								s_cnt <= c_ZERO;
+								end if;
+							
+							
+							
+							
+							
+							
+							
 						--FIFTH CHARACTER
 							when CHAR4 =>
 						
@@ -361,7 +453,7 @@ begin
 										else
 											-- Move to the next state if next length bit is '1' else end transmission
 											if(s_data_length(0) = '1') then
-												s_led_state <= CHAR5;
+												s_led_state <= PAUSE4;
 											else
 												-- END OF TRANSMISSION 
 												s_led_state <= START;
@@ -380,7 +472,7 @@ begin
 										else
 											-- Move to the next state if next length bit is '1' else end transmission
 											if(s_data_length(0) = '1') then
-												s_led_state <= CHAR5;
+												s_led_state <= PAUSE4;
 											else
 												-- END OF TRANSMISSION 
 												s_led_state <= START;
@@ -392,6 +484,28 @@ begin
 										end if;
 									end if;
 								end if;
+								
+								
+							when PAUSE4 =>
+		
+								if (s_cnt < c_DELAY_1SEC) then
+									s_cnt <= s_cnt + 1;
+								else
+									-- Move to the next state if next length bit is '1' else end transmission
+									if(s_data_length(3) = '1') then		
+									
+										s_led_state <= CHAR5;
+									
+									else
+										-- END OF TRANSMISSION 
+										s_led_state <= START;
+										s_t_state <= INPUTTING;
+									end if;
+								-- Reset local counter value
+								s_cnt <= c_ZERO;
+								end if;		
+							
+							
 						
 						
 					--SIXTH CHARACTER
@@ -426,7 +540,6 @@ begin
 								end if;
 							
 							
-								
 								
 								
 								
