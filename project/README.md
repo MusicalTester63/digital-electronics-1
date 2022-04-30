@@ -85,6 +85,18 @@ First 6 7-segment displays are used to display morse code. Last display is used 
 This example shows how driver displays character "a" and also demonstrates reset function.
 <img src="images/morse_dirver_sim_char_a.png" alt="morse_driver_sim"/>
 
+
+
+### Morse code transmitter
+This component uses RGB LEDs. Left LED is used to transmit morse code by blinking(DOT) and shining(DASH). Left LED either blink or shines in green color or it is turned off completly. Right LED is used as state indicator. When red light is shining, transmitter is in the state of inputting. When a button is pressed, transmitters state changes to transmitting which is indicated by yellow light. After transmitting it returns to inputting state indicated by red as mentioned before.
+
+
+
+
+
+
+
+
 <a name="top"></a>
 
 ## TOP module description and simulations
