@@ -106,7 +106,7 @@ This example shows how transmitter translates and transmits character "a" and "b
 
 # TOP module description and simulations
 
-### Block scheme of the transmitter
+### Block scheme of the top
 <img src="images/top.png" alt="top"/>
 
 <a name="video"></a>
