@@ -2,9 +2,9 @@
 
 ### Team members
 
-* Jan Pelka (responsible for xxx)
-* Jakub Tauber (responsible for xxx)
-* Anton Tsyhanov (responsible for xxx)
+* Jan Pelka (responsible for wine)
+* Jakub Tauber (responsible for some alcohol)
+* Anton Tsyhanov (responsible for being quiet)
 * David Hamran (responsible for display,github)
 ### Table of contents
 
