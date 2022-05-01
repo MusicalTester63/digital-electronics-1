@@ -67,7 +67,7 @@ Link:
 <a name="hardware"></a>
 
 # Hardware description
-<img src="images\hardware\7seg_rgb.png" alt="7seg_rgb" style="width:450px;"/>
+<img src="images\hardware\7seg_rgb.png" alt="7seg_rgb"/>
 <img src="images\hardware\n4r.png" alt="board" style="width:450px;"/>
 
 <a name="modules"></a>
