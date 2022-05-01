@@ -129,7 +129,7 @@ TOP module combines function of display [driver](#disp_driver) and [transmitter]
 with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.
 
 ### Block scheme of the top
-<img src="images/top.png" alt="top" style="width:600px;"/>
+<img src="images/top.png" alt="top" style="width:800px;"/>
 
 ### Simulation
 This example shows how transmitter displays,translates and transmits character "a" and "b", also shows reset function.
