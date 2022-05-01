@@ -126,7 +126,11 @@ This example shows how transmitter translates and transmits character "a" and "b
 
 ### Description
 TOP module combines function of display [driver](#disp_driver) and [transmitter](#transmitter)
-with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.
+with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.  
+  
+Link to bitstream: [MCT bitstream]()
+
+
 
 ### Block scheme of the top
 <img src="images/top.png" alt="top" style="width:800px;"/>
