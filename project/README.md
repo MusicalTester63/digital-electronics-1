@@ -118,6 +118,15 @@ This example shows how transmitter translates and transmits character "a" and "b
 
 # TOP module description and simulations
 
+### List of modules
+
+* [display driver](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/driver_7seg_8digits.vhd)
+* [transmitter](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/transmitter.vhd)
+
+### Description
+TOP module combines function of display driver](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/morse_display_driver/morse_display_driver.srcs/sources_1/new/driver_7seg_8digits.vhd) and [transmitter](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/transmitter/transmitter.srcs/sources_1/new/transmitter.vhd)
+with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.
+
 ### Block scheme of the top
 <img src="images/top.png" alt="top"/>
 
