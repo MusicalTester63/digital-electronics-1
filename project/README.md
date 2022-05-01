@@ -128,7 +128,7 @@ This example shows how transmitter translates and transmits character "a" and "b
 TOP module combines function of display [driver](#disp_driver) and [transmitter](#transmitter)
 with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.  
   
-Link to bitstream: [MCT bitstream](\vivado\mct.bit)
+Link to bitstream: [MCT bitstream](vivado\mct.bit)
 
 
 
