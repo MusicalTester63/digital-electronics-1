@@ -133,7 +133,7 @@ Link to bitstream: [MCT bitstream](https://github.com/MusicalTester63/digital-el
 
 
 ### Block scheme of the top
-<img src="images/top.png" alt="top" style="width:800px;"/>
+<img src="images/top.png" alt="top"/>
 
 ### Simulation
 This example shows how transmitter displays,translates and transmits character "a" and "b", also shows reset function.
@@ -143,10 +143,11 @@ This example shows how transmitter displays,translates and transmits character "
 
 # Video
 
-Write your text here
+In making.
 
 <a name="references"></a>
 
 # References
 
-1. Write your text here.
+1.	[7-segment alphabet 'Seikoo' by Alexander Fakoó in 2012](https://fakoo.de/)
+2.	[display driver](https://github.com/tomas-fryza/digital-electronics-1/tree/master/labs/07-display_driver)
