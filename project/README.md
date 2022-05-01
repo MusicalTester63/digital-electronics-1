@@ -121,6 +121,10 @@ This example shows how transmitter translates and transmits character "a" and "b
 ### Block scheme of the top
 <img src="images/top.png" alt="top"/>
 
+### Simulation
+This example shows how transmitter displays,translates and transmits character "a" and "b", also shows reset function.
+<img src="images/transmitter_sim_char_ab.png" alt="mct_sim"/>
+
 <a name="video"></a>
 
 # Video

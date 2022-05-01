@@ -77,7 +77,7 @@ begin
 	
     clk_en0 : entity work.clock_enable
         generic map(
-            g_MAX => 1  -- 1 FOR SIMULATION PURPOSE ONLY !!!
+            g_MAX => 25000000  -- 1 FOR SIMULATION PURPOSE ONLY !!!
                         -- FOR IMPLEMENTATION: g_MAX = 250 ms(25000000) / (1/100 MHz)
         )
         port map(

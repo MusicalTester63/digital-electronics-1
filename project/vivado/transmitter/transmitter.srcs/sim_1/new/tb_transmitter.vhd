@@ -78,17 +78,17 @@ begin
 	p_start : process
 	begin
 	
-	s_start <= '0';
-	wait for 100 ns;
-	s_start <= '1';
-    wait for 20 ns;
-    s_start <= '0';
-	wait for 300 ns;
+		s_start <= '0';
+		wait for 100 ns;
+		s_start <= '1';
+		wait for 20 ns;
+		s_start <= '0';
+		wait for 300 ns;
 
-	s_start <= '1';
-    wait for 20 ns;
-    s_start <= '0';
-	wait;
+		s_start <= '1';
+		wait for 20 ns;
+		s_start <= '0';
+		wait;
 	
 	end process p_start;
 

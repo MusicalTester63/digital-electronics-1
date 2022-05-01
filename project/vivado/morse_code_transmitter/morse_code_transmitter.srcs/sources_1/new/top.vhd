@@ -34,6 +34,7 @@ entity mct is
         LED16_R : out STD_LOGIC;	--RGB LEDs
         LED16_G : out STD_LOGIC;
         LED16_B : out STD_LOGIC;
+		
         LED17_R : out STD_LOGIC;
         LED17_G : out STD_LOGIC;
         LED17_B : out STD_LOGIC;
@@ -95,9 +96,11 @@ architecture Behavioral of mct is
 		data_i(2)	=>	SW(2),
 		data_i(1)	=>	SW(1),
 		data_i(0)	=>	SW(0),
-
-          
+  
         dp_o => DP,
+		
+		
+		
         seg_o(6) => CA,
         seg_o(5) => CB,
         seg_o(4) => CC,
@@ -109,17 +112,6 @@ architecture Behavioral of mct is
 		dig_o(7 downto 0) => AN(7 downto 0)
 
 
-
       );
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 
 	end Behavioral;
