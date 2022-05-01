@@ -123,7 +123,7 @@ This example shows how transmitter translates and transmits character "a" and "b
 
 ### Simulation
 This example shows how transmitter displays,translates and transmits character "a" and "b", also shows reset function.
-<img src="images/transmitter_sim_char_ab.png" alt="mct_sim"/>
+<img src="images/transmitter_sim_char_ab.png" alt="mct_sim" style="width:1200px;"/>
 
 <a name="video"></a>
 
