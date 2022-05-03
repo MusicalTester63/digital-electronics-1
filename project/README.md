@@ -128,7 +128,7 @@ This example shows how transmitter translates and transmits character "a" and "b
 TOP module combines function of display [driver](#disp_driver) and [transmitter](#transmitter)
 with a use of NEXYS A7-50T boards componets such as buttons,switches, LEDs and 7-segment displays.  
   
-Link to bitstream: [MCT bitstream](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/vivado/mct.bit)
+Link to bitstream: [MCT bitstream](https://github.com/MusicalTester63/digital-electronics-1/blob/main/project/bitstream/mct.bit)
 
 
 
@@ -143,7 +143,7 @@ This example shows how transmitter displays,translates and transmits character "
 
 # Video
 
-In making.
+[Morse code transmitter](https://vutbr-my.sharepoint.com/:v:/g/personal/xhamra02_vutbr_cz/EYEQgXSe-05MuBIUBcAM3FUBl9328yNuNv6GYfezb_PxIA?e=dcoChB)
 
 <a name="references"></a>
 
