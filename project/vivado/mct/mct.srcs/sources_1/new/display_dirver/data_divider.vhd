@@ -344,7 +344,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "011001"; --ZOBRAZUJE PISMENO "Z"
-				decp_o  <= "10011111"; --bodky
+				decp_o  <= "11001111"; --bodky
 
 			WHEN "100100" =>
 				--ZOBRAZENIE ZNAKU "@" ".--.-."

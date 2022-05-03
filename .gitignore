@@ -15,7 +15,6 @@
 *.rpt
 *.vdi
 
-
 ## netlist
 *.edf
 *.edif
