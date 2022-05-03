@@ -469,7 +469,7 @@ BEGIN
 				data2_o <= "100110"; --PRAZDNE
 				data1_o <= "100110"; --PRAZDNE
 				data0_o <= "100010"; --ZOBRAZUJE ZNAK "8"
-				decp_o  <= "00011000"; --bodky
+				decp_o  <= "11100111"; --bodky
 
 
 			WHEN "100011" =>
