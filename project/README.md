@@ -1,5 +1,10 @@
 # MORSE CODE TRANSMITTER
 
+>Every child has a dream, to pursue the dream is in every child's hand to make it a reality. One's invention is another's tool...  
+>  
+> **- Samuel Finley Breese Morse**
+
+
 ### Team members
 
 * Jan Pelka (responsible for wine)
@@ -19,7 +24,7 @@
 
 ## Project objectives
 
-Objective of our project is to create a Morse code transmitter. Our approach is that user will select desired character from alphabet that will be displayed on NEXYS A7-50T 7-segment displays. Transmitter will be in state of inputting, in this state a yellow LED shining. After selecting desired character, user can trasmit by pressing a button. After the press of a button state will be changed to transmitting which will be indicated by LEDs color changing to green. After trasmitting inputed character there will be a 2s pause indicatd by a red light. From this state transmitter will go back to inputting state and process can be repeated.
+Objective of our project is to create a Morse code transmitter. Our approach is that user will select desired character from alphabet that will be displayed on NEXYS A7-50T 7-segment displays. Transmitter will be in state of inputting, in this state a red LED shining. After selecting desired character, user can trasmit by pressing a button. After the press of a button state will be changed to transmitting which will be indicated by LEDs color changing to yellow. From this state transmitter will go back to inputting state and process can be repeated.  
 
 ### State diagram:
 
@@ -73,6 +78,10 @@ Link:
 <a name="modules"></a>
 
 # VHDL modules description and simulations
+
+### !!!WARNING!!!
+
+> _**Simulations show dot as high state, this is to clearly demonstrate that the 7-segment display is displaying a dot. In the implementation dot is represented by low state.**_
 
 ### List of modules
 
